@@ -18,7 +18,7 @@ from django.contrib import admin
 from polls import views as poll_views
 
 urlpatterns = [
-    path('', poll_views.index, name='index'),
+    path('', poll_views.IndexView, name='index'),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
